@@ -1,12 +1,18 @@
 .card{
   text-align: center;
   background-color: #DDA0DD;
-  width: 40%;
-  height: 400px;
+  width: 35%;
+  height: 250px;
   margin: 0 auto;
   margin-top: 10%;
   margin-bottom: 10%;
    border: 1px solid;
   padding: 10px;
   box-shadow: 5px 5px 10px gray;
+  overflow:auto;
+}
+
+.ticker{
+  font-weight: bold;
+  font-size: 2em;
 }

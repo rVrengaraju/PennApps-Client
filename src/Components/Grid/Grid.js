@@ -1,17 +1,27 @@
 import React, { Component } from 'react';
+import {PythonShell} from 'python-shell';
 import './Grid.css'
 
 class Grid extends Component{
 
+	popUp = () => {
 
+	}
 
-	alertEvent = (d) => {
-		alert("You have clicked on: "+d)
+	goldMan = (description) => {
+		PythonShell.run('my_script.py', null, function (err) {
+		  if (err) throw err;
+		  console.log('finished');
+		});
 	}
 
 	render() {
-		console.log(this.props.lst)
-		const listItems = this.props.lst.map((d, index) => <li key={index} className="card" onClick={() => this.alertEvent(d)}>{d}</li>);
+		let listItems = []
+
+		for(let i=0; i<this.props.lst.length; i++){
+			listItems.push(<li key={i} className="card" onClick={() => this.goldMan(this.props.lst[i][1])}><div className="ticker">{this.props.lst[i][0]}</div>{this.props.lst[i][1]}</li>)
+		}
+
 
 		return (
 		<div>

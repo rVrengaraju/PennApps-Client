@@ -47,15 +47,15 @@ class App extends Component {
 
 	            <div className="title">PORTFOLIO ADVISOR</div>
 
-				<form autocomplete="off" className="space"> 
-				<label class="field a-field a-field_a1">
-				    <input class="field__input a-field__input" placeholder="e.g. AAPL" type="text" name="title" value={this.state.currTicker} onChange={this.handleChange} required/>
-				    <span class="a-field__label-wrap">
-				      <span class="a-field__label">STOCK TICKER</span>
+				<form autoComplete="off" className="space"> 
+				<label className="field a-field a-field_a1">
+				    <input className="field__input a-field__input" placeholder="e.g. AAPL" type="text" name="title" value={this.state.currTicker} onChange={this.handleChange} required/>
+				    <span className="a-field__label-wrap">
+				      <span className="a-field__label">STOCK TICKER</span>
 				    </span>
 				  </label>
-				<button class="pure-button pure-button-primary space"onClick={this.submitTicker}>ADD</button>
-				<button class="pure-button pure-button-primary space"onClick={this.clearTickerList}>CLEAR</button>
+				<button className="pure-button pure-button-primary space"onClick={this.submitTicker}>ADD</button>
+				<button className="pure-button pure-button-primary space"onClick={this.clearTickerList}>CLEAR</button>
 				</form>
 
 				<Grid lst={this.state.tickerList}/>

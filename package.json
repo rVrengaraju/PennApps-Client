@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "python-shell": "^1.0.8",
     "react": "^16.9.0",
     "react-bootstrap-form": "^0.1.4-beta6",
     "react-dom": "^16.9.0",
