@@ -1,4 +1,26 @@
 
+.title{
+ 
+
+ color: white;
+ margin: 0;
+ padding: 0px 0px 6px 0px;
+ font-size: 51px;
+ line-height: 44px;
+ letter-spacing: -2px;
+ font-weight: bold;
+ text-align: center;
+ margin-top: 3%;
+ text-shadow: 2px 2px gray;
+}
+
+
+.space{
+  margin: 2% 0.7%;
+  text-align: center;
+}
+
+
 /*
 =====
 LEVEL 1. RESET STYLES
@@ -8,6 +30,9 @@ LEVEL 1. RESET STYLES
 .field{
   --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
 }
+
+
+
 
 .field__input{ 
   background-color: transparent;
